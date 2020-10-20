@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/main.css'
-
+import App from './components/App';
+import './assets/main.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    Hello world
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root'),
 );
