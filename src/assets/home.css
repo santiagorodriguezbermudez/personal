@@ -4,6 +4,7 @@
 
 .main {
   background-color: #e5e5e5;
+  max-width: 1440px;
 }
 
 .custom-navbar {
@@ -41,4 +42,9 @@
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 3rem;
 }
