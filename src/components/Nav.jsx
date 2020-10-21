@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../assets/images/logo.svg';
 
 const Nav = () => (
-  <div className="custom-navbar">
+  <div className="custom-navbar sticky top-0">
     <img src={logo} alt="logo" className="logo" />
 
     <ul className="item-navigation">

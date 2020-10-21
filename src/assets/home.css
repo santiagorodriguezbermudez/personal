@@ -416,6 +416,7 @@ body {
     align-items: flex-start;
     text-align: left;
     border-bottom-left-radius: 15rem;
+    height: 35rem;
   }
 
   .main-title {
