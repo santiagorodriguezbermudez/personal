@@ -26,7 +26,7 @@ const Project = ({ project, order }) => {
       </h5>
       <p>{project.description}</p>
       <div className="stacks">
-        {project.languages.reduce((totalString, language) => totalString + language)}
+        {project.languages.map(language => <span key={`${language}-key`}>{language}</span>)}
       </div>
       <button type="button" className="project-link" onClick={openModal}>
         See Project
@@ -36,12 +36,13 @@ const Project = ({ project, order }) => {
 
   const modalStyles = {
     content: {
-      top                   : '50%',
-      left                  : '50%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)',
+      top: '50%',
+      left: '10%',
+      right: '10%',
+      bottom: 'auto',
+      transform: 'translate(0%, -50%)',
+      borderRadius: '15px',
+      boxShadow: '0 16px 32px',
     },
   };
 
@@ -55,30 +56,30 @@ const Project = ({ project, order }) => {
         style={modalStyles}
         contentLabel="This is a test modal"
       >
+        <div><img src={project.image} alt="modal_view" className="modal-img" /></div>
         <div className="modal-header">
-          <h2 className="modal-title">{project.title}</h2>
           <h5>
-            <span>{project.company}</span>
+            <span>{project.title}</span>
+            {' '}
             |
             {' '}
             <span>{project.role}</span>
+            {' '}
             |
             {' '}
             <span>{project.year}</span>
           </h5>
         </div>
-        <div>{project.image}</div>
         <div className="modal-description">
           <p>
             {project.longDescription}
           </p>
-          <div>
-            {project.languages.reduce((totalString, language) => totalString + language)}
-            <hr />
+          <div className="modal-cta">
+            {project.languages.map(language => <span key={`${language}-key`}>{language}</span>)}
           </div>
-          <div>
-            {project.githubLink}
-            {project.demo}
+          <div className="modal-cta">
+            <a className="modal-link" href={project.githubLink}> See Repo</a>
+            <a className="modal-link" href={project.demo}> Live Demo</a>
           </div>
         </div>
       </Modal>

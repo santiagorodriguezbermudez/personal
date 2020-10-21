@@ -190,56 +190,68 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: #72297e;
-  background: #ebebff;
+  color: white;
+  background: #72297e;
   border-radius: 8px;
   padding: 7px;
 }
 
 .modal-img {
   width: 90%;
-  height: 30rem;
+  height: 12rem;
   object-fit: cover;
   object-position: center;
   border-radius: 15px;
-  margin: 1.5rem;
+  margin: 1rem auto;
   box-shadow: 3px 3px 10px #00adee;
+}
+
+.modal-header {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.modal-header h5 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #72297e;
+  font-weight: bold;
+  text-align: center;
 }
 
 .modal-description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  margin: 1rem auto;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .modal-description p {
-  width: 90%;
-  margin: 1.5rem auto;
-  text-align: center;
+  margin: 1rem auto;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+.modal-cta {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .modal-description span {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
   color: #00adee;
   background: #ebebff;
   border-radius: 8px;
-  padding: 7px;
-  margin: 2.5rem 1rem;
+  text-align: center;
+  padding: 0.5rem;
 }
 
 .modal-link {
   border: 1px solid #00adee;
   border-radius: 8px;
   color: #00adee;
-  font-weight: 500;
-  font-size: 1.7rem;
-  line-height: 2.4rem;
-  width: 10rem;
-  height: 4.5rem;
   text-decoration: none;
   padding: 1rem;
   margin: 3rem auto;
@@ -257,7 +269,7 @@ body {
 }
 
 /* ---------------------------Media Queries-------------------------------- */
-@media (min-width: 30em) {
+@media (min-width: 1020px) {
   .hero {
     margin: 0 auto;
     width: 100%;
@@ -305,23 +317,38 @@ body {
   }
 
   .modal-img {
-    height: 60rem;
-    width: 100%;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
+    height: 25rem;
+  }
+
+  .modal-header h5 {
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    color: #72297e;
+    font-weight: bold;
+    text-align: left;
+    margin: 2rem 0;
   }
 
   .modal-description {
-    flex-direction: row;
     margin: 3rem auto;
   }
 
   .modal-description p {
-    width: 60%;
-    text-align: justify;
-    margin: 0;
+    margin-right: 3rem;
+  }
+
+  .modal-cta {
+    justify-content: start;
+  }
+
+  .modal-link {
+    margin: 1.5rem 1.5rem 1rem 0;
+    padding: 0.5rem;
   }
 
   .modal-description span {
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 1rem 0;
+    text-align: center;
   }
 }
