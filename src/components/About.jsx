@@ -16,7 +16,7 @@ import linkedin from '../assets/images/linkedin.svg';
 import medium from '../assets/images/medium.svg';
 
 const About = () => (
-  <section className="about-myself shadow" id="about">
+  <section className="about-myself" id="about">
     <div className="self-description">
       <h2>About myself</h2>
       <h5>
