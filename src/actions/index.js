@@ -10,13 +10,14 @@ export const fetchProjectsAsync = () => (
   dispatch => {
     axios({
       method: 'GET',
-      url: `${API_URL}/books`,
+      url: `${API_URL}`,
       headers: {
         Accept: 'application/json',
       },
     }).then(response => {
-      console.log(response.data);
-      dispatch(setProjects(response.data));
+      const starredProjects = response.data.filter(project => project.owner.login === 'santiagorodriguezbermudez');
+      console.log(starredProjects);
+      dispatch(setProjects(starredProjects));
     }).catch(e => {
       console.log(e);
     });

@@ -16,4 +16,4 @@ export const PROJECTS = [
   },
 ];
 
-export const API_URL = 'github';
+export const API_URL = 'https://api.github.com/users/santiagorodriguezbermudez/starred';
