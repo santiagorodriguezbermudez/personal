@@ -12,6 +12,14 @@ body {
   margin: auto;
 }
 
+.icons a {
+  margin: 7px;
+}
+
+.icons a:first-of-type {
+  margin-left: 0;
+}
+
 .custom-navbar {
   margin: 0 auto;
   padding: 1.5rem 0;
@@ -259,6 +267,76 @@ body {
   text-align: center;
 }
 
+.about-myself {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  text-align: center;
+  border-top-right-radius: 5rem;
+  background-color: white;
+}
+
+.self-description {
+  margin: auto;
+  font-style: normal;
+  width: 80%;
+}
+
+.self-description h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
+  margin: 5px 0;
+}
+
+.self-description h5 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6b778c;
+  margin: 5px 0;
+}
+
+.information-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.information-category h5 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.category-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.information-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0.3rem;
+}
+
+.item {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20%;
+  margin: 5px;
+}
+
 .footer {
   text-align: center;
   padding: 3rem;
@@ -350,5 +428,23 @@ body {
   .modal-description span {
     margin: 1.5rem 1.5rem 1rem 0;
     text-align: center;
+  }
+
+  .about-myself {
+    background-position: top;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+    border-top-right-radius: 15rem;
+  }
+
+  .self-description {
+    margin: 0 2.5rem;
+    width: 40%;
+  }
+
+  .item {
+    width: 50px;
+    height: 50px;
   }
 }
