@@ -1,18 +1,25 @@
 import React from 'react';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
+import thunk from 'redux-thunk';
 import App from './components/App';
 import combinedReducers from './reducers/index';
 import './assets/main.css';
 import './assets/home.css';
-import initialProjects from './constants/constants';
+import { fetchProjectsAsync } from './actions/index';
 
-const initialState = initialProjects;
+// const initialState = initialProjects;
 
 const store = createStore(combinedReducers, {
-  projects: initialState,
+  projects: [],
+}, applyMiddleware(thunk));
+
+store.subscribe(() => {
+  console.log('state updated', store.getState());
 });
+
+store.dispatch(fetchProjectsAsync());
 
 ReactDOM.render(
   <Provider store={store}>

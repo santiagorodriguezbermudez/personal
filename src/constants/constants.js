@@ -1,6 +1,6 @@
 import mindClickImage from '../assets/images/MC-Project.png';
 
-const PROJECTS = [
+export const PROJECTS = [
   {
     image: mindClickImage,
     title: 'Mind Click',
@@ -16,4 +16,4 @@ const PROJECTS = [
   },
 ];
 
-export default PROJECTS;
+export const API_URL = 'github';
