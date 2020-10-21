@@ -4,12 +4,12 @@ import { connect } from 'react-redux';
 import Project from '../components/Project';
 
 const ProjectList = ({ projectList }) => {
-  const renderProjects = () => projectList.map(project => (
-    <Project key={project.id} project={project} />
+  const renderProjects = () => projectList.map((project, index) => (
+    <Project key={project.id} project={project} order={index} />
   ));
 
   return (
-    <div className="Project-Container">
+    <div id="projects">
       {renderProjects()}
     </div>
   );
