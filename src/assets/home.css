@@ -141,7 +141,6 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 15px;
-  box-shadow: 1px 1px 5px #00adee;
   margin: 1rem;
   order: 1;
 }
@@ -215,7 +214,6 @@ body {
   object-position: center;
   border-radius: 15px;
   margin: 1rem auto;
-  box-shadow: 3px 3px 10px #00adee;
 }
 
 .modal-header {
