@@ -139,7 +139,7 @@ body {
   width: 90%;
   height: 20rem;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   border-radius: 15px;
   margin: 1rem;
   order: 1;
@@ -211,7 +211,7 @@ body {
   width: 90%;
   height: 12rem;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   border-radius: 15px;
   margin: 1rem auto;
 }
