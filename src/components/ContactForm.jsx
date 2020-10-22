@@ -4,6 +4,7 @@ const ContactForm = () => (
   <div className="bg-white">
     <section className="contact-form" id="contact">
       <form action="/landing">
+        <input type="hidden" name="form-name" value="contact" />
         <h2>Contact Me</h2>
         <p>
           Reach out if you need help building an awesome product.
