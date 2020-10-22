@@ -1,15 +1,5 @@
 import ReactRotatingText from 'react-rotating-text';
 import React from 'react';
-// import figure1 from '../assets/images/figure1.svg';
-// import figure2 from '../assets/images/figure2.svg';
-// import figure3 from '../assets/images/figure3.svg';
-// import figure4 from '../assets/images/figure4.svg';
-// import figure5 from '../assets/images/figure5.svg';
-// import figure6 from '../assets/images/figure6.svg';
-// import figure7 from '../assets/images/figure7.svg';
-// import figure8 from '../assets/images/figure8.svg';
-// import figure9 from '../assets/images/figure9.svg';
-// import figure10 from '../assets/images/figure10.svg';
 import github from '../assets/images/github.svg';
 import twitter from '../assets/images/twitter.svg';
 import linkedin from '../assets/images/linkedin.svg';

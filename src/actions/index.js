@@ -17,9 +17,7 @@ export const fetchProjectsAsync = () => (
     }).then(response => {
       let starredProjects = response.data.filter(project => project.owner.login === 'santiagorodriguezbermudez');
       starredProjects = starredProjects.sort((a, b) => b.stargazers_count - a.stargazers_count);
-      console.log(starredProjects);
       dispatch(setProjects(starredProjects));
-
     }).catch(e => {
       console.log(e);
     });
