@@ -3,7 +3,7 @@ import React from 'react';
 const ContactForm = () => (
   <div className="bg-white">
     <section className="contact-form" id="contact">
-      <form action="/landing">
+      <form name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <h2>Contact Me</h2>
         <p>
