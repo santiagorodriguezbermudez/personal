@@ -12,12 +12,14 @@ export const fetchProjectsAsync = () => (
       method: 'GET',
       url: `${API_URL}`,
       headers: {
-        Accept: 'application/json',
+        Accept: 'application/vnd.github.mercy-preview+json',
       },
     }).then(response => {
-      const starredProjects = response.data.filter(project => project.owner.login === 'santiagorodriguezbermudez');
+      let starredProjects = response.data.filter(project => project.owner.login === 'santiagorodriguezbermudez');
+      starredProjects = starredProjects.sort((a, b) => b.stargazers_count - a.stargazers_count);
       console.log(starredProjects);
       dispatch(setProjects(starredProjects));
+
     }).catch(e => {
       console.log(e);
     });

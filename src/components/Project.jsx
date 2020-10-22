@@ -16,15 +16,30 @@ const Project = ({ project, order }) => {
     <div className="project-description">
       <h2>{project.title}</h2>
       <h5>
-        <span>{project.company}</span>
+        <span>
+          ⭐
+          {' '}
+          {project.company}
+        </span>
         |
         {' '}
-        <span>{project.role}</span>
+        <span>
+          Last Update:
+          {' '}
+          {project.year}
+        </span>
         |
         {' '}
-        <span>{project.year}</span>
+        <span>
+          Language:
+          {' '}
+          {project.role}
+        </span>
       </h5>
-      <p>{project.description}</p>
+      <p>
+        {project.description.substr(0, 100)}
+        ...
+      </p>
       <div className="stacks">
         {project.languages.map(language => <span key={`${language}-key`}>{language}</span>)}
       </div>

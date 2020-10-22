@@ -1,4 +1,20 @@
 import mindClickImage from '../assets/images/MC-Project.png';
+import piggyAppImage from '../assets/images/Piggy_app.png';
+import starWarImage from '../assets/images/starrwar.png';
+import botImage from '../assets/images/bot.png';
+import weatherImage from '../assets/images/weather.png';
+import bjjbImage from '../assets/images/bjjb.png';
+import defaultImage from '../assets/images/logo.svg';
+
+export const PROJECTIMAGES = {
+  'Telegram Covid Bot': botImage,
+  'Mind Click': mindClickImage,
+  'Star Warfare': starWarImage,
+  'Piggy App': piggyAppImage,
+  'Traducciones BJJB': bjjbImage,
+  Weather: weatherImage,
+  Default: defaultImage,
+};
 
 export const PROJECTS = [
   {
