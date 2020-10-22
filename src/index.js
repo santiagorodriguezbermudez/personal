@@ -15,10 +15,6 @@ const store = createStore(combinedReducers, {
   projects: [],
 }, applyMiddleware(thunk));
 
-store.subscribe(() => {
-  console.log('state updated', store.getState());
-});
-
 store.dispatch(fetchProjectsAsync());
 
 ReactDOM.render(
