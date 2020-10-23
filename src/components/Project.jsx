@@ -93,8 +93,8 @@ const Project = ({ project, order }) => {
             {project.languages.map(language => <span key={`${language}-key`}>{language}</span>)}
           </div>
           <div className="modal-cta">
-            <a className="modal-link" href={project.githubLink}> See Repo</a>
-            <a className="modal-link" href={project.demo}> Live Demo</a>
+            <a className="modal-link" href={project.githubLink} target="_blank" rel="noreferrer"> See Repo</a>
+            <a className="modal-link" href={project.demo} target="_blank" rel="noreferrer"> Live Demo</a>
           </div>
         </div>
       </Modal>

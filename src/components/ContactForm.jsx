@@ -10,9 +10,9 @@ const ContactForm = () => (
           Reach out if you need help building an awesome product.
           I can help you out with strategy, product, implementing or any advisory about a product.
         </p>
-        <input type="text" name="name" id="name" placeholder="Type your name" />
-        <input type="email" name="email" id="email" placeholder="Type your email" />
-        <textarea name="message" id="message" placeholder="How can I help you?" rows="10" />
+        <input type="text" name="name" id="name" placeholder="Type your name" required />
+        <input type="email" name="email" id="email" placeholder="Type your email" required />
+        <textarea name="message" id="message" placeholder="How can I help you?" rows="10" required />
         <input type="submit" className="submit-button" value="Send" />
       </form>
     </section>
