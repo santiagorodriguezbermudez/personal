@@ -183,7 +183,7 @@ body {
 .project-link {
   border: 1px solid #de1669;
   border-radius: 8px;
-  color: #00adee;
+  color: #DE1669;
   text-decoration: none;
   padding: 1rem;
   margin: 3rem auto;
@@ -191,7 +191,7 @@ body {
 }
 
 .project-link:hover {
-  background: #00adee;
+  background: #de1669;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: white;
@@ -340,8 +340,8 @@ body {
 }
 
 .contact-form {
-  background-color: #00adee;
-  color: #fff;
+  background-color: #de1669;
+  color: white;
   display: flex;
   align-items: center;
   padding: 3rem 0;
