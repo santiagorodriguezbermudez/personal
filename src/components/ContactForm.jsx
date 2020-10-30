@@ -6,7 +6,7 @@ const ContactForm = () => (
       <form name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <h2>Contact Me</h2>
-        <p>
+        <p className="text-4xl">
           Reach out if you need help building an awesome product.
           I can help you out with strategy, product, implementing or any advisory about a product.
         </p>

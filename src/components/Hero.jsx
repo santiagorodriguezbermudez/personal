@@ -21,11 +21,11 @@ const Hero = () => {
         Nice to meet you.
         <br />
         <span className="font-bold">I love building products. </span>
-        Reach out if you think I can help you building one.
+        Reach out if you think I can help you build one.
       </h1>
 
       <p className="connect-text">
-        Reach out! Let&apos;s connect on social media.
+        Let&apos;s connect on social media.
       </p>
 
       <div className="icon-container">
