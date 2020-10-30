@@ -5,6 +5,7 @@ import botImage from '../assets/images/bot.png';
 import weatherImage from '../assets/images/weather.png';
 import bjjbImage from '../assets/images/bjjb.png';
 import defaultImage from '../assets/images/logo.svg';
+import catalogue from '../assets/images/catalogue.png';
 
 export const PROJECTIMAGES = {
   'Telegram Covid Bot': botImage,
@@ -14,6 +15,7 @@ export const PROJECTIMAGES = {
   'Traducciones BJJB': bjjbImage,
   Weather: weatherImage,
   Default: defaultImage,
+  Catalogue: catalogue,
 };
 
 export const PROJECTS = [
