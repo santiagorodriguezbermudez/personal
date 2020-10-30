@@ -3,7 +3,7 @@
 A personal project to deploy a simple web with personal information using React
 
 ## Live
-[Portfolio Link - Work in Progress]()
+[Santiago Rodriguez Bermudez](https://santiagorodriguez.xyz/)
 
 ## Built With
 
